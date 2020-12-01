@@ -414,7 +414,7 @@ public class AgoraARStreamerActivity extends AppCompatActivity implements GLSurf
             mRtcEngine.setParameters("{\"rtc.log_filter\": 65535}");
             mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING);
             mRtcEngine.enableDualStreamMode(true);
-            mRtcEngine.setVideoEncoderConfiguration(new VideoEncoderConfiguration(VideoEncoderConfiguration.VD_640x480,
+            mRtcEngine.setVideoEncoderConfiguration(new VideoEncoderConfiguration(VideoEncoderConfiguration.VD_640x360,
                     VideoEncoderConfiguration.FRAME_RATE.FRAME_RATE_FPS_30, VideoEncoderConfiguration.STANDARD_BITRATE,
                     VideoEncoderConfiguration.ORIENTATION_MODE.ORIENTATION_MODE_ADAPTIVE));
             mRtcEngine.setClientRole(Constants.CLIENT_ROLE_BROADCASTER);

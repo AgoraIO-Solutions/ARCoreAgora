@@ -216,7 +216,7 @@ public class AgoraARAudienceActivity extends AppCompatActivity {
     private void setUpRemoteView(int uid) {
         mRemoteView = RtcEngine.CreateRendererView(getBaseContext());
         mRemoteContainer.addView(mRemoteView);
-        VideoCanvas remoteVideoCanvas = new VideoCanvas(mRemoteView, VideoCanvas.RENDER_MODE_HIDDEN, uid);
+        VideoCanvas remoteVideoCanvas = new VideoCanvas(mRemoteView, VideoCanvas.RENDER_MODE_FIT, uid);
         mRtcEngine.setupRemoteVideo(remoteVideoCanvas);
     }
 

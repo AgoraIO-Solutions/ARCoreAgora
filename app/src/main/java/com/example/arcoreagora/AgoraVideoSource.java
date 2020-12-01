@@ -34,4 +34,14 @@ public class AgoraVideoSource implements IVideoSource {
     public IVideoFrameConsumer getConsumer() {
         return mConsumer;
     }
+
+    @Override
+    public int getCaptureType() {
+        return MediaIO.CaptureType.CAMERA.intValue();
+    }
+
+    @Override
+    public int getContentHint() {
+        return MediaIO.ContentHint.NONE.intValue();
+    }
 }

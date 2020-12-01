@@ -35,5 +35,5 @@ dependencies {
     implementation 'com.android.support:design:27.0.2'
 
     //Video
-    implementation 'io.agora.rtc:full-sdk:2.9.4'
+    implementation 'io.agora.rtc:full-sdk:3.1.2'
 }
